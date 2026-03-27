@@ -23,7 +23,7 @@ if (form6) {
     formData.append("Алкоголь", alcohol.join(", "));
     formData.append("_captcha", "false");
 
-    fetch("https://formsubmit.co/ajax/plyasheva4856@mail.ru", {
+    fetch("https://formsubmit.co/ajax/trushnikova.lina97@mail.ru", {
       method: "POST",
       body: formData
     })
