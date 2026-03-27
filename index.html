@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приглашение</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <audio id="bgMusic" loop>
+  <source src="Stephen Sanchez - Until I Found You.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicBtn" class="music-btn off"></button>
+
+  <!-- Блок 1 -->
+  <section class="block1 reveal">
+    <img src="img/1.png" alt="" class="block1-img">
+  </section>
+
+  <!-- Блок 2 -->
+<section class="block2 reveal">
+
+  <!-- фото 2 -->
+  <img src="img/2.png" alt="" class="block2-img">
+
+  <!-- кнопка картинкой -->
+  <a href="https://vk.ru/away.php?to=https%3A%2F%2F2gis.ru%2Ftomsk%2Fgeo%2F422740746079340%2F84.981526%2C56.411139&utf=1" target="_blank" class="block2-btn">
+    <img src="img/3.png" alt="">
+  </a>
+
+</section>
+
+<!-- Блок 3 -->
+<section class="block3">
+
+  <img src="img/4.png" alt="" class="block3-img reveal">
+  <img src="img/5.png" alt="" class="block3-img reveal">
+  <img src="img/6.png" alt="" class="block3-img reveal">
+  <img src="img/7.png" alt="" class="block3-img reveal">
+  <img src="img/8.png" alt="" class="block3-img reveal">
+
+</section>
+
+  <!-- Блок 4 -->
+  <section class="block4 reveal">
+    <img src="img/9.png" alt="" class="block4-img">
+  </section>
+
+    <!-- Блок 5 -->
+  <section class="block5 reveal">
+    <img src="img/10.png" alt="" class="block5-img">
+  </section>
+
+  <!-- Блок 6 -->
+<section class="block6 reveal">
+
+  <h2 class="block6-title">Анкета</h2>
+
+  <p class="block6-subtitle">
+    До 30.05.26г. подтвердите, пожалуйста, своё присутствие на торжестве
+  </p>
+
+  <p class="block6-subtitle">
+    Если вы планируете прийти со своей парой или семьёй, то заполняйте анкету на каждого гостя отдельно
+  </p>
+
+  <form class="block6-form" id="form6">
+
+    <input 
+      type="text" 
+      name="fio"
+      placeholder="Ваше ФИО"
+      class="block6-input"
+      required
+    >
+
+    <div class="block6-group">
+      <p class="block6-group-title">
+        Сможете ли присутствовать на нашем торжестве?
+      </p>
+
+      <label class="block6-option">
+        <input type="radio" name="attendance" value="С удовольствием приду" required>
+        С удовольствием приду
+      </label>
+
+      <label class="block6-option">
+        <input type="radio" name="attendance" value="Не смогу">
+        К сожалению, не смогу присутствовать
+      </label>
+
+      <label class="block6-option">
+        <input type="radio" name="attendance" value="Сообщу позже">
+        Сообщу позже
+      </label>
+    </div>
+
+    <div class="block6-group">
+      <p class="block6-group-title">
+        Есть ли у Вас особые предпочтения по еде?
+      </p>
+
+      <label class="block6-option">
+        <input type="radio" name="food" value="Нет" required>
+        Нет
+      </label>
+
+      <label class="block6-option">
+        <input type="radio" name="food" value="Не ем мясо">
+        Не ем мясо
+      </label>
+
+      <label class="block6-option">
+        <input type="radio" name="food" value="Не ем рыбу">
+        Не ем рыбу
+      </label>
+
+      <label class="block6-option">
+        <input type="radio" name="food" value="Вегетарианец">
+        Вегетарианец
+      </label>
+    </div>
+
+    <div class="block6-group">
+      <p class="block6-group-title">
+        Какой алкоголь Вы предпочитаете?
+      </p>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Красное вино">
+        Красное вино
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Белое вино">
+        Белое вино
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Шампанское">
+        Шампанское
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Виски">
+        Виски
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Коньяк">
+        Коньяк
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Водка">
+        Водка
+      </label>
+
+      <label class="block6-option">
+        <input type="checkbox" name="alcohol" value="Не пью алкоголь">
+        Не пью алкоголь
+      </label>
+    </div>
+
+    <button type="submit" class="block6-btn">
+      <img src="img/11.png" alt="">
+    </button>
+
+  </form>
+
+</section>
+
+  <!-- Блок 7 -->
+  <section class="block7 reveal">
+    <img src="img/12.png" alt="" class="block7-img">
+  </section>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

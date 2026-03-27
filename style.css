@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Liana';
+    src: url('font/lainyday.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('font/Montserrat-ExtraLight.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+/* Блок 1 */
+.block1{
+  width:100%;
+  height:auto; /* на весь экран */
+  overflow:hidden;
+}
+
+.block1-img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* заполняет экран красиво */
+  display:block;
+}
+
+/* Блок 2 */
+.block2{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* фото */
+.block2-img{
+  width:100%;
+  display:block;
+}
+
+/* кнопка */
+.block2-btn{
+  margin:20px 0;
+  display:block;
+}
+
+/* картинка кнопки */
+.block2-btn img{
+  width:180px; /* можешь менять размер */
+  max-width:70vw;
+  height:auto;
+  display:block;
+}
+
+/* Блок 3 */
+.block3{
+  background-color: #AFBDA5;
+  width:100%;
+}
+
+.block3-img{
+  width:100%;
+  display:block; /* убирает зазоры */
+}
+
+/* Блок 4 */
+.block4{
+    background-color: #AFBDA5;
+  width:100%;
+  height:auto; /* на весь экран */
+  overflow:hidden;
+}
+
+.block4-img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* заполняет экран красиво */
+  display:block;
+}
+
+/* Блок 5 */
+.block5{
+  width:100%;
+  height:auto; /* на весь экран */
+  overflow:hidden;
+}
+
+.block5-img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* заполняет экран красиво */
+  display:block;
+}
+
+/* Блок 6 */
+.block6{
+  width:100%;
+  padding:30px 20px;
+  text-align:center;
+  background:#AFBDA5; /* если фон нужен тёмный */
+}
+
+/* заголовок */
+.block6-title{
+  font-family:'Liana';
+  font-size:35.7pt;
+  color:#fff;
+  margin-bottom:15px;
+}
+
+/* подзаголовки */
+.block6-subtitle{
+  font-family:'Montserrat';
+  font-size:9.2pt;
+  color:#fff;
+  margin-bottom:10px;
+  line-height:1.4;
+}
+
+/* форма */
+.block6-form{
+  margin-top:20px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+/* поле */
+.block6-input{
+  width:100%;
+  border:none;
+  border-bottom:1px solid #fff;
+  background:transparent;
+  padding:10px 5px;
+  color:#fff;
+  font-family:'Montserrat';
+  font-size:14px;
+  outline:none;
+}
+
+.block6-input::placeholder{
+  color:#fff;
+}
+
+/* группы */
+.block6-group{
+  text-align:left;
+}
+
+.block6-group-title{
+  font-family:'Montserrat';
+  font-size:14px;
+  color:#fff;
+  margin-bottom:10px;
+}
+
+/* варианты */
+.block6-option{
+  display:block;
+  font-family:'Montserrat';
+  font-size:14px;
+  color:#fff;
+  margin-bottom:8px;
+}
+
+.block6-option input{
+  margin-right:8px;
+}
+
+/* кнопка */
+.block6-btn{
+  border:none;
+  background:none;
+  margin-top:10px;
+}
+
+.block6-btn img{
+  width:180px;
+  max-width:70vw;
+  display:block;
+  margin:0 auto;
+}
+
+/* Блок 7 */
+.block7{
+  width:100%;
+  height:auto; /* на весь экран */
+  overflow:hidden;
+}
+
+.block7-img{
+  width:100%;
+  height:100%;
+  object-fit:cover; /* заполняет экран красиво */
+  display:block;
+}
+
+/* кнопка музыки */
+.music-btn{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+
+  width:50px;
+  height:50px;
+
+  background:#ffffff;
+  border:none;
+  border-radius:50%;
+
+  z-index:9999;
+  cursor:pointer;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* иконка */
+.music-btn::before{
+  content:"❚❚"; /* пауза */
+  font-size:18px;
+  color:#000;
+}
+
+/* когда выключено */
+.music-btn.off::before{
+  content:"▶";
+}
+
+/* плавное появление блоков */
+.reveal{
+  opacity:0;
+  transform:translateY(30px);
+  transition:opacity 1s ease, transform 1s ease;
+  will-change:opacity, transform;
+}
+
+.reveal.show{
+  opacity:1;
+  transform:translateY(0);
+}
